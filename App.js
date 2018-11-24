@@ -19,7 +19,7 @@ const slides = [
     key : 'slidetwo',
     title : 'Title 2',
     text : 'Description title two',
-    image : require('./src/assets/2.jpg'),
+    image : require('../assets/2.jpeg'),
     imageStyle : styles.image,
     backgroundColor : '#febe29'
   },
@@ -27,7 +27,7 @@ const slides = [
     key : 'slidethree',
     title : 'Title 3',
     text : 'Description title three',
-    image : require('./src/assets/3.jpg'),
+    image : require('../assets/3.jpeg'),
     imageStyle : styles.image,
     backgroundColor : '#22bcb5'
   },
@@ -35,28 +35,47 @@ const slides = [
 
 export default class App extends Component {
 
+    static navigationOptions = {
+        header : null
+    }
+
   _navigateScreen = () => {
     this.props.navigation.navigate('Home')
   }
 
-  
+  state = {
+    showRealApp: false
+  }
+  _onDone = () => {
+    // User finished the introduction. Show real app through
+    // navigation or simply by controlling state
+    this.setState({ showRealApp: true });
+  }
 
   render() {
    
-    return(
+    // return(
       
         
-        <AppIntroSlider 
-        slides={slides} 
-        onDone={this._navigateScreen}
-        doneLabel="Finish"
-        showPrevButton="true"
+    //     <AppIntroSlider 
+    //     slides={slides} 
+    //     onDone={this._navigateScreen}
+    //     doneLabel="Finish"
+    //     showPrevButton="true"
         
-        />
+    //     />
       
         
       
-    )   
+    // )  
+    
+    
+      if (this.state.showRealApp) {
+        return <Intro />;
+      } else {
+        return <AppIntroSlider slides={slides} onDone={this._onDone}/>;
+      }
+     
        
       
     

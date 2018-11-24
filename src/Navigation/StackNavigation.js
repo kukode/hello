@@ -1,4 +1,6 @@
+import React from 'react';
 import {createStackNavigator} from 'react-navigation';
+import QuotesScreen from '../Screen/Quotes';
 import HomeScreen from '../Screen/Home';
 
 export default StackNavigate = createStackNavigator({
@@ -8,7 +10,13 @@ export default StackNavigate = createStackNavigator({
             title : 'Screen 1'
         })
     },
+    Quote : {
+        screen : QuotesScreen,
+        navigationOptions : () =>({
+            title : 'Screen 2'
+        })
+    }
 
 },{
-    initialRouteName: 'Home'
+    initialRouteName: 'Quote'
 })
