@@ -6,10 +6,11 @@ import QuotesScreen from '../Screen/Quotes';
 import AttitudesScreen from '../Screen/Attitude';
 import ProvidersScreen from '../Screen/Provider';
 import FasilitatorsScreen from '../Screen/Fasilitator';
+import LtsScreen from '../Screen/Lts';
 import ContactsScreen from '../Screen/Contact';
 
 
-export default logStack = StackNavigator({
+export default logStack = createStackNavigator({
 
     Intro : {
         
@@ -29,6 +30,9 @@ export default logStack = StackNavigator({
     },
     Fasilitators : {
         screen : FasilitatorsScreen
+    },
+    Lts : {
+        screen : LtsScreen
     },
     Contacts : {
         screen : ContactsScreen

@@ -1,15 +1,16 @@
 
 import React, {Component} from 'react';
-import {Text,View,StyleSheet,TouchableOpacity,FlatList,Image,Button} from 'react-native';
+import {Text,View,StyleSheet,TouchableOpacity,FlatList,Button} from 'react-native';
 import {Content, Card,CardItem} from 'native-base'
-
+import {Icon} from 'react-native-elements'
 
 
 export default class Home extends Component {
    
    items = [
-    {id:1, name: 'Quotes',image:require('../assets/img/quote.png') }, { id:2,name: 'Attitude',image:require('../assets/img/attitude.png') },
-    {id:3, name: 'Provider',image:require('../assets/img/provider.png') }, { id:4,name: 'Fasilitator',image:require('../assets/img/fasilitator.png') },
+    {id:1, name: 'Quotes' }, { id:2,name: 'Attitude'},
+    {id:3, name: 'Provider' }, { id:4,name: 'Fasilitator' },
+    { id:5,name: 'LTS' },
     
   ];
  
@@ -18,10 +19,10 @@ export default class Home extends Component {
 
      return(
       <Content>
-        <Card>
+        <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
-          <CardItem cardBody>
-                <Image source={item.image} style={{height: 200, width: null, flex: 1}}/>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+              <Text style={styles.instructions}>QUOTE</Text>
           </CardItem>
         </TouchableOpacity>
         </Card>
@@ -31,10 +32,10 @@ export default class Home extends Component {
    else if(item.id === 2){
     return(
       <Content>
-        <Card>
+        <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Attitudes')}>
-          <CardItem cardBody>
-                <Image source={item.image} style={{height: 200, width: null, flex: 1}}/>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+                <Text style={styles.instructions}>ATTITUDE</Text>
           </CardItem>
         </TouchableOpacity>
         </Card>
@@ -45,11 +46,11 @@ export default class Home extends Component {
    else if(item.id === 3){
     return(
       <Content>
-        <Card>
-        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Attitudes')}>
-          <CardItem cardBody>
-                <Image source={item.image} style={{height: 200, width: null, flex: 1}}/>
-          </CardItem>
+        <Card transparent>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Providers')}>
+            <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+                  <Text style={styles.instructions}>PROVIDER</Text>
+            </CardItem>
         </TouchableOpacity>
         </Card>
       </Content>
@@ -62,16 +63,30 @@ export default class Home extends Component {
     return(
 
       <Content>
-        <Card>
+        <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Fasilitators')}>
-          <CardItem cardBody>
-                <Image source={item.image} style={{height: 200, width: null, flex: 1}}/>
-          </CardItem>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+                <Text style={styles.instructions}>FASILITATOR</Text>
+          </CardItem> 
         </TouchableOpacity>
         </Card>
       </Content>
       
-     
+    )
+   }
+   else if(item.id === 5){
+    return(
+
+      <Content>
+        <Card transparent>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Lts')}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+                <Text style={styles.instructions}>LTS</Text>
+          </CardItem> 
+        </TouchableOpacity>
+        </Card>
+      </Content>
+      
     )
    }
 
@@ -89,7 +104,16 @@ export default class Home extends Component {
           keyExtractor={id=>'id'}
           numColumns={1}
           />
-          <Button color="#2CCCE4" title='Contact Us' onPress={()=>this.props.navigation.navigate('Contacts')}/>
+          <Card transparent>
+          <TouchableOpacity
+            style={styles.contact}
+            onPress={()=>this.props.navigation.navigate('Contacts')}
+            >
+            
+              <Text style={{textAlign:'center',color:'#fff',fontFamily:'Good Morning'}}>ABOUT US</Text>
+          </TouchableOpacity>
+          </Card> 
+          
         </View>
         
     
@@ -98,12 +122,25 @@ export default class Home extends Component {
 }   
 
 const styles = StyleSheet.create({
- 
+  instructions: {
+    fontFamily: "Good Morning",
+    fontSize: 28,
+    textAlign: "center",
+    color: "#fff",
+    marginBottom: 5
+  },
+
+ contact : {
+  backgroundColor:'#00242D',
+  borderRadius:20,
+  height:50,
+  alignContent:'center',
+  justifyContent:'center'
+ },
   MainContainer :{
    
   justifyContent: 'center',
-  flex:1,
-  backgroundColor:'#004b87'
+  flex:1
   
    
   },
@@ -138,10 +175,7 @@ const styles = StyleSheet.create({
      alignItems: "center"
      
    },
-   image : {
-     
-     height : 100
-   },
-  
+
+ 
    
   });

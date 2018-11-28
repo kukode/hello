@@ -69,6 +69,15 @@
 		<string>rubicon-icon-font.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>AntDesign.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Good Morning.ttf</string>
+		<string>vincHand.ttf</string>
+		<string>CaviarDreams.ttf</string>
+		<string>CaviarDreams_Bold.ttf</string>
+		<string>TeachersStudent-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

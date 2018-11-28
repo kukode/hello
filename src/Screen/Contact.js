@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {Container,Content, Button,Text,Card,CardItem} from 'native-base';
-import {Linking} from 'react-native';
+import {Linking,StyleSheet} from 'react-native';
 
 
 
@@ -13,26 +13,42 @@ export default class Contact extends Component {
             <Container>
                 <Content>
                 <Card>
-                    <CardItem>  
-                        <Text>Email : </Text>
+                    <CardItem style={styles.backCard}>  
+                        <Text style={styles.textStyle}>Name : Agus Susilo JP </Text>
                     </CardItem>
-                    <CardItem>
-                        <Text>Phone : </Text>
+                    <CardItem style={styles.backCard}>  
+                        <Text style={styles.textStyle}>Email : keepinspirit25@gmail.com</Text>
                     </CardItem>
-                    <CardItem>
-                        <Text>WhatsApp : </Text>
+                    <CardItem style={styles.backCard}>
+                        <Text style={styles.textStyle}>Phone : 0896-7730-3195</Text>
                     </CardItem>
-                    <CardItem>
-                        <Text>Website : </Text>
+                    <CardItem style={styles.backCard}>
+                        <Text style={styles.textStyle}>WhatsApp : 0896-7730-3195</Text>
+                    </CardItem>
+                    <CardItem style={styles.backCard}>
+                        <Text style={styles.textStyle}>Website : http://outbounditu.com/</Text>
                     </CardItem>
                 </Card>
                 <Button block danger
-                onPress={()=>Linking.openURL('https://play.google.com/store/apps/details?id=org.qluein.android&hl=in')}
+                onPress={()=>Linking.openURL('https://play.google.com/store/apps/details?id=com.hello.dev.bogor')}
                 >
-                <Text> Update Apps </Text></Button>
+                <Text> Check Update Hello </Text></Button>
                 </Content>
             </Container>
         )
     }
 }
 
+const styles = StyleSheet.create({
+    textStyle: {
+      fontFamily: "CaviarDreams_Bold",
+      fontSize: 18,
+      color: "#fff",
+      marginBottom: 5,
+     
+    },
+    backCard : {
+        backgroundColor : '#00242d'
+    }
+
+})

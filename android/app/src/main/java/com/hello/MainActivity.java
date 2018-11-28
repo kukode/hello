@@ -1,4 +1,4 @@
-package com.hello;
+package com.hello.dev.bogor;
 
 import com.facebook.react.ReactActivity;
 
