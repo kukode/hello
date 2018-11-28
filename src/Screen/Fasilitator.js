@@ -70,7 +70,7 @@ export default class Fasilitator extends Component {
                     <Card transparent>
                         <CardItem cardBody style={styles.itemStyle}> 
                             <Icon name="person" color='#00aced'/>
-                            <Text style={styles.textStyle}>Ziga Indonesia Kreatif</Text>
+                            <Text style={styles.textStyle}>Waris styo</Text>
                             
                         </CardItem>
                         <CardItem cardBody style={styles.itemStyle}> 
