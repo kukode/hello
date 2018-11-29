@@ -146,6 +146,84 @@ export default class Provider extends Component {
                         </CardItem>
                     </Card>
 
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>AGET outbound </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal9.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Bogor wisata </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal10.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Bounder outbound provider </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal11.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Ara outbound </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal12.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>ASA outbound </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal13.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Balakecrak ngaprak </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal14.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
                     
                     
                     
@@ -318,6 +396,132 @@ export default class Provider extends Component {
                         <ListItem>
                             <Icon name="place" />
                             <Text style={styles.textStyleModal}>Bogor</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal9"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>AGET outbound</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0819 1752 4554</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>AGET outbound</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bali    </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal10"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Bogor wisata</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0821 1004 6388</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Bogor wisata</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal11"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Bounder outbound provider</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0813 8277 7357</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Bounder outbound provider</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal12"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Ara outbound </Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0812  9547 5626</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Ara outbound </Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Depok </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal13"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>ASA outbound </Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0821 1122  7677</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>ASA outbound </Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal14"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Balakecrak ngaprak </Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0888  9017  374</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Balakecrak ngaprak</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor </Text>
                         </ListItem>  
                     </List>    
                 </Modal>
