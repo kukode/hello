@@ -105,6 +105,47 @@ export default class Fasilitator extends Component {
                             </Button>
                         </CardItem>
                     </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Nandar kuswara</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal6.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Agus purnomo ( Abel )</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal7.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Hermawan Rusdiyana</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal8.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    
             
 
                 
@@ -195,6 +236,60 @@ export default class Fasilitator extends Component {
                         <ListItem>
                             <Icon name="phone" />
                             <Text style={styles.textStyleModal}>0822 1727 1740</Text>
+                        </ListItem>  
+                        
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                 <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal6"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Nandar kuswara</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0857 7691 2517</Text>
+                        </ListItem>  
+                        
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal7"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Agus purnomo (Abel)</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0858 8168  4834</Text>
+                        </ListItem>  
+                        
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Jakarta</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal8"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Hermawan Rusdiyana</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0821  1122  7677</Text>
                         </ListItem>  
                         
                         <ListItem>
