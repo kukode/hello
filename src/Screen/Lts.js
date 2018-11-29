@@ -95,7 +95,7 @@ export default class Lts extends Component {
                 <List>
                     <ListItem>
                         <Icon name="person" />
-                        <Text style={styles.textStyleModal}>JAde Sudarna Wiharja (Burger) </Text>
+                        <Text style={styles.textStyleModal}>Ade Sudarna Wiharja (Burger) </Text>
                     </ListItem> 
                     <ListItem>
                         <Icon name="phone" />
