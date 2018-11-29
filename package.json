@@ -7,14 +7,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "init": "^0.1.2",
     "native-base": "^2.8.1",
     "react": "16.6.1",
     "react-native": "0.57.5",
     "react-native-app-intro-slider": "^1.0.1",
     "react-native-elements": "^0.19.1",
+    "react-native-fab": "^1.0.8",
     "react-native-gesture-handler": "^1.0.9",
     "react-native-modalbox": "^1.6.0",
+    "react-native-snackbar-component": "^1.1.0",
     "react-native-super-grid": "^2.4.3",
     "react-native-vector-icons": "^6.1.0",
     "react-navigation": "^2.18.2"
