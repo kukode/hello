@@ -1,27 +1,67 @@
 import React,{Component} from 'react';
-import {Image} from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base'
-
+import {View} from 'react-native';
+import { Container, Header, Content, Card, CardItem, Text,Body,Title } from 'native-base'
+import axios from 'axios'
+import FAB from 'react-native-fab';
+import Snackbar from 'react-native-snackbar-component';
+import {Icon} from 'react-native-elements'
 
 export default class Quotes extends Component {
-    items = 
-        {
-            image : require('../assets/img/under.png')
+    constructor(){
+        super()
+        this.state = {
+            data : [],
         }
+    }
     
+    loadData() {
+        axios.get('http://192.168.43.133:5000/api')
+        .then(result => {
+            const qoute = result.data 
+            this.setState({data : qoute})
+            alert('Sukses Refresh Data')
+        })
+    }
 
+    componentDidMount(){
+        this.loadData()
+    }
     render(){
 
         return(
+            
            <Container>
+               <Header>
+                    
+                    <Body>
+                        <Title>List Qoute</Title>
+                    </Body>
+                
+            </Header>
                <Content>
-                   <Card>
-                       <CardItem cardBody> 
-                           <Image source={this.items.image} style={{height: 300, width: null, flex: 1}}/>
-                       </CardItem>
-                   </Card>
+               {this.state.data.map(item=>
+                        <Card key={item.id}>
+                        <CardItem>
+                        <Body>
+                            <Text style={{fontFamily: 'TeachersStudent-Regular',fontSize:18}}>
+                            {item.description}
+                            </Text>
+                        </Body>
+                        </CardItem>
+                        
+                    </Card>
+                    )}
                </Content>
+
+               <FAB 
+               buttonColor="aqua" 
+               iconTextColor="#fff" 
+               onClickAction={() => {this.loadData()}} 
+               visible={true} 
+               iconTextComponent={<Icon name="autorenew"/>} 
+               />
            </Container>
         )
     }
 }
+console.disableYellowBox = true
