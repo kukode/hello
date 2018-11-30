@@ -145,10 +145,37 @@ export default class Fasilitator extends Component {
                         </CardItem>
                     </Card>
 
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}> Agus mussodiq</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal9.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}> Egon ahmad gosasih</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal10.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
                     
             
 
-                
+               
                 
                 </Content>
                
@@ -295,6 +322,42 @@ export default class Fasilitator extends Component {
                         <ListItem>
                             <Icon name="place" />
                             <Text style={styles.textStyleModal}>Bogor</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal9"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Agus mussodiq</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0821  8382  0834</Text>
+                        </ListItem>  
+                        
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Lampung</Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal10"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Egon ahmad gosasih</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0818 0853  0873</Text>
+                        </ListItem>  
+                        
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Jakarta</Text>
                         </ListItem>  
                     </List>    
                 </Modal>
