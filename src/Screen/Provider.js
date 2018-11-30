@@ -224,6 +224,58 @@ export default class Provider extends Component {
                         </CardItem>
                     </Card>
 
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>LAUT-Outdoor Adventure Education </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal15.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Enefka madiun </Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal16.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                     <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>ZAMQ OUTBOUND</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal17.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
+                    <Card transparent>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Icon name="person" color='#00aced'/>
+                            <Text style={styles.textStyle}>Edelweiss outbound</Text>
+                            
+                        </CardItem>
+                        <CardItem cardBody style={styles.itemStyle}> 
+                            <Button success onPress={()=>this.refs.modal18.open()} style={styles.btn}>
+                                <Text style={{color:'#fff',marginLeft:20,marginRight:20}}>Detail</Text>
+                            </Button>
+                        </CardItem>
+                    </Card>
+
                     
                     
                     
@@ -522,6 +574,90 @@ export default class Provider extends Component {
                         <ListItem>
                             <Icon name="place" />
                             <Text style={styles.textStyleModal}>Bogor </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal15"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>LAUT-Outdoor Adventure Education </Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0818 0834 1920</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>LAUT-Outdoor Adventure Education</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bogor </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                 <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal16"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Enefka madiun </Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0821  3996  5218</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Enefka madiun</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Madiun </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal17"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>ZAMQ OUTBOUND</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0896 6033 8415</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>ZAMQ OUTBOUND</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Bandung </Text>
+                        </ListItem>  
+                    </List>    
+                </Modal>
+
+                <Modal style={[styles.modal, styles.modal2]}  position={"center"} ref={"modal18"}>
+                    <List>
+                        <ListItem>
+                            <Icon name="person" />
+                            <Text style={styles.textStyleModal}>Edelweiss outbound</Text>
+                        </ListItem> 
+                        <ListItem>
+                            <Icon name="phone" />
+                            <Text style={styles.textStyleModal}>0878  8737  8192</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="beenhere" />
+                            <Text style={styles.textStyleModal}>Edelweiss outbound</Text>
+                        </ListItem>  
+                        <ListItem>
+                            <Icon name="place" />
+                            <Text style={styles.textStyleModal}>Nusa Tenggara Barat </Text>
                         </ListItem>  
                     </List>    
                 </Modal>
