@@ -8,6 +8,8 @@ import ProvidersScreen from '../Screen/Provider';
 import FasilitatorsScreen from '../Screen/Fasilitator';
 import LtsScreen from '../Screen/Lts';
 import ContactsScreen from '../Screen/Contact';
+import ProvinceScreen from '../Screen/provinsi/province'
+import JabarScreen from '../Screen/provinsi/list/jabar'
 
 
 export default logStack = createStackNavigator({
@@ -36,6 +38,12 @@ export default logStack = createStackNavigator({
     },
     Contacts : {
         screen : ContactsScreen
+    },
+    Provinces : {
+        screen : ProvinceScreen
+    },
+    Jabar : {
+        screen : JabarScreen
     }
 
 

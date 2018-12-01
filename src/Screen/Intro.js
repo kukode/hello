@@ -5,12 +5,12 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 
 const styles = StyleSheet.create({
   text : {
-    color: '#fff',
+    color: '#444',
     fontSize:18,
     fontFamily: 'CaviarDreams_Bold'
   },
   title: {
-   
+   color:'#444'
   },
   
     mainContent: {
@@ -28,8 +28,9 @@ const slides = [
     key: 'somethun',
     title: 'Agoes Susilo JP',
     text: 'Jadilah orang yang pandai, sepandai  pandainya dan jadilah orang baik, sebaik baiknya',
+    titleStyle : styles.title,
     textStyle : styles.text,
-    backgroundColor: '#004b87',
+    backgroundColor: '#00fdff',
     image:require('../assets/img/slide.png')
   },
   {
@@ -37,8 +38,9 @@ const slides = [
     title: ' Fred Devito',
     image:require('../assets/img/slide.png'),
     text: 'If it doesn’t challenge you, it doesn’t change you',
+    titleStyle : styles.title,
     textStyle : styles.text,
-    backgroundColor: '#004b87'
+    backgroundColor: '#00fdff'
   },
   
 ]

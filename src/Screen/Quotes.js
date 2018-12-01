@@ -15,7 +15,7 @@ export default class Quotes extends Component {
     }
     
     loadData() {
-        axios.get('http://192.168.43.133:5000/api')
+        axios.get('https://hellohai.herokuapp.com/api/')
         .then(result => {
             const qoute = result.data 
             this.setState({data : qoute})

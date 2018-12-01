@@ -10,7 +10,7 @@ export default class Home extends Component {
    items = [
     {id:1, name: 'Quotes' }, { id:2,name: 'Attitude'},
     {id:3, name: 'Provider' }, { id:4,name: 'Fasilitator' },
-    { id:5,name: 'LTS' },
+    { id:5,name: 'LTS' },{ id:6,name: 'hello' },
     
   ];
  
@@ -21,7 +21,7 @@ export default class Home extends Component {
       <Content>
         <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#00fdff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
               <Text style={styles.instructions}>QUOTE</Text>
           </CardItem>
         </TouchableOpacity>
@@ -34,7 +34,7 @@ export default class Home extends Component {
       <Content>
         <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Attitudes')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#ffae00',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                 <Text style={styles.instructions}>ATTITUDE</Text>
           </CardItem>
         </TouchableOpacity>
@@ -47,8 +47,8 @@ export default class Home extends Component {
     return(
       <Content>
         <Card transparent>
-        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Providers')}>
-            <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Provinces')}>
+            <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                   <Text style={styles.instructions}>PROVIDER</Text>
             </CardItem>
         </TouchableOpacity>
@@ -65,7 +65,7 @@ export default class Home extends Component {
       <Content>
         <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Fasilitators')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                 <Text style={styles.instructions}>FASILITATOR</Text>
           </CardItem> 
         </TouchableOpacity>
@@ -80,8 +80,23 @@ export default class Home extends Component {
       <Content>
         <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Lts')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#04313b',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#bed1fc',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                 <Text style={styles.instructions}>LTS</Text>
+          </CardItem> 
+        </TouchableOpacity>
+        </Card>
+      </Content>
+      
+    )
+   }
+   else if(item.id === 6){
+    return(
+
+      <Content>
+        <Card transparent>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Lts')}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#cddc39',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
+                <Text style={styles.instructions}>LEGEND VOICE</Text>
           </CardItem> 
         </TouchableOpacity>
         </Card>
@@ -110,7 +125,7 @@ export default class Home extends Component {
             onPress={()=>this.props.navigation.navigate('Contacts')}
             >
             
-              <Text style={{textAlign:'center',color:'#fff',fontFamily:'Good Morning'}}>ABOUT US</Text>
+              <Text style={{textAlign:'center',color:'#fff',fontFamily:'Kraash Black'}}>ABOUT US</Text>
           </TouchableOpacity>
           </Card> 
           
@@ -123,10 +138,10 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   instructions: {
-    fontFamily: "Good Morning",
-    fontSize: 28,
+    fontFamily: "Kraash Black",
+    fontSize: 24,
     textAlign: "center",
-    color: "#fff",
+    color: "#444",
     marginBottom: 5
   },
 
@@ -135,7 +150,8 @@ const styles = StyleSheet.create({
   borderRadius:20,
   height:50,
   alignContent:'center',
-  justifyContent:'center'
+  justifyContent:'center',
+  
  },
   MainContainer :{
    

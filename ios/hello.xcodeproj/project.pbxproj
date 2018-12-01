@@ -77,6 +77,7 @@
 		523702EAD2674764932CC8A6 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FEC1179395B4A2180ECC346 /* CaviarDreams_Bold.ttf */; };
 		79941A0ED2F14127844FC7E9 /* TeachersStudent-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA812FC30A4C18B4FF226C /* TeachersStudent-Regular.ttf */; };
 		5056A11032684A7CABED6DBC /* Lovely Quotes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA701550729F41B99F219C94 /* Lovely Quotes.ttf */; };
+		2EBBF483FAE447449FE922DF /* Kraash Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EC62B838B2F403DBB2BF8B4 /* Kraash Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -424,6 +425,7 @@
 		2FEC1179395B4A2180ECC346 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; name = "CaviarDreams_Bold.ttf"; path = "../src/assets/fonts/CaviarDreams_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		8CCA812FC30A4C18B4FF226C /* TeachersStudent-Regular.ttf */ = {isa = PBXFileReference; name = "TeachersStudent-Regular.ttf"; path = "../src/assets/fonts/TeachersStudent-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		FA701550729F41B99F219C94 /* Lovely Quotes.ttf */ = {isa = PBXFileReference; name = "Lovely Quotes.ttf"; path = "../src/assets/fonts/Lovely Quotes.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0EC62B838B2F403DBB2BF8B4 /* Kraash Black.ttf */ = {isa = PBXFileReference; name = "Kraash Black.ttf"; path = "../src/assets/fonts/Kraash Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -730,6 +732,7 @@
 				2FEC1179395B4A2180ECC346 /* CaviarDreams_Bold.ttf */,
 				8CCA812FC30A4C18B4FF226C /* TeachersStudent-Regular.ttf */,
 				FA701550729F41B99F219C94 /* Lovely Quotes.ttf */,
+				0EC62B838B2F403DBB2BF8B4 /* Kraash Black.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1218,6 +1221,7 @@
 				523702EAD2674764932CC8A6 /* CaviarDreams_Bold.ttf in Resources */,
 				79941A0ED2F14127844FC7E9 /* TeachersStudent-Regular.ttf in Resources */,
 				5056A11032684A7CABED6DBC /* Lovely Quotes.ttf in Resources */,
+				2EBBF483FAE447449FE922DF /* Kraash Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
