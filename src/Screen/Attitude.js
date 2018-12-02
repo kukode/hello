@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text,Body,Title } from 'native-base'
 import axios from 'axios'
 import FAB from 'react-native-fab';
-import Snackbar from 'react-native-snackbar-component';
+
 import {Icon} from 'react-native-elements'
 export default class Attitude extends Component {
     constructor(){
@@ -14,7 +14,7 @@ export default class Attitude extends Component {
     }
     
     loadData() {
-        axios.get('http://192.168.43.133:5000/attitude')
+        axios.get('https://hellohai.herokuapp.com/attitude/')
         .then(result => {
             const qoute = result.data 
             this.setState({data : qoute})
@@ -42,7 +42,7 @@ export default class Attitude extends Component {
                         <Card key={item.id}>
                         <CardItem>
                         <Body>
-                            <Text style={{fontFamily: 'TeachersStudent-Regular',fontSize:18}}>
+                            <Text style={{fontFamily: 'TeachersStudent-Regular',fontSize:22}}>
                             {item.description}
                             </Text>
                         </Body>

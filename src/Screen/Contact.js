@@ -29,10 +29,19 @@ export default class Contact extends Component {
                         <Text style={styles.textStyle}>Website : http://outbounditu.com/</Text>
                     </CardItem>
                 </Card>
+
+                <Button block primary
+                onPress={()=>this.props.navigation.navigate('Tutorial')}
+                style={{marginBottom:10}}>
+                
+                <Text> Tutorial Aplikasi </Text>
+                </Button>
                 <Button block danger
                 onPress={()=>Linking.openURL('https://play.google.com/store/apps/details?id=com.hello.dev.bogor')}
                 >
-                <Text> Check Update Hello </Text></Button>
+                <Text> Check Update Hello </Text>
+                </Button>
+                
                 </Content>
             </Container>
         )

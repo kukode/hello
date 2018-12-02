@@ -17,7 +17,7 @@ export default class Jabar extends Component {
     }
     
     loadData() {
-        axios.get('https://hellohai.herokuapp.com/provider/jabar')
+        axios.get('https://hellohai.herokuapp.com/provider/jatim')
         .then(result => {
             const qoute = result.data 
             this.setState({data : qoute})
@@ -36,7 +36,7 @@ export default class Jabar extends Component {
                 <Header>
                     
                     <Body>
-                        <Title>List Provider Jawa Barat</Title>
+                        <Title>List Provider Jawa Timur</Title>
                     </Body>
                 
                 </Header>

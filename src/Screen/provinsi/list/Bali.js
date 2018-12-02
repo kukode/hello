@@ -8,7 +8,7 @@ import {Icon} from 'react-native-elements';
 
 
 
-export default class Jabar extends Component {
+export default class Jateng extends Component {
     constructor(){
         super()
         this.state = {
@@ -17,7 +17,7 @@ export default class Jabar extends Component {
     }
     
     loadData() {
-        axios.get('https://hellohai.herokuapp.com/provider/jabar')
+        axios.get('https://hellohai.herokuapp.com/provider/bali')
         .then(result => {
             const qoute = result.data 
             this.setState({data : qoute})
@@ -36,7 +36,7 @@ export default class Jabar extends Component {
                 <Header>
                     
                     <Body>
-                        <Title>List Provider Jawa Barat</Title>
+                        <Title>List Provider Bali</Title>
                     </Body>
                 
                 </Header>

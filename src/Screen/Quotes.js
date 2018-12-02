@@ -43,7 +43,7 @@ export default class Quotes extends Component {
                         <Card key={item.id}>
                         <CardItem>
                         <Body>
-                            <Text style={{fontFamily: 'TeachersStudent-Regular',fontSize:18}}>
+                            <Text style={{fontFamily: 'TeachersStudent-Regular',fontSize:22}}>
                             {item.description}
                             </Text>
                         </Body>

@@ -64,7 +64,7 @@ export default class Home extends Component {
 
       <Content>
         <Card transparent>
-        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Fasilitators')}>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Fasil')}>
           <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                 <Text style={styles.instructions}>FASILITATOR</Text>
           </CardItem> 

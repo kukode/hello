@@ -5,13 +5,13 @@ import {Content, Card,CardItem} from 'native-base'
 import {Icon} from 'react-native-elements'
 
 
-export default class Province extends Component {
+export default class Fasilitator extends Component {
    
    items = [
     {id:1, name: 'Lampung' }, { id:2,name: 'Jawa Barat'},
     {id:3, name: 'Jawa Tengah' }, { id:4,name: 'Yogyakarta' },
     { id:5,name: 'Jawa Timur' },{ id:6,name: 'Bali' },{ id:7,name: 'Nusa Tenggara Barat' },
-    { id:8,name: 'Jakarta'},
+    
   ];
  
   xyz = ({item}) => {
@@ -20,8 +20,8 @@ export default class Province extends Component {
      return(
       <Content>
         <Card transparent>
-        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Lampung')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
               <Text style={styles.instructions}>LAMPUNG</Text>
           </CardItem>
         </TouchableOpacity>
@@ -36,7 +36,7 @@ export default class Province extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Jabar')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA BARAT</Text>
          </CardItem>
        </TouchableOpacity>
@@ -50,8 +50,8 @@ export default class Province extends Component {
     return(
      <Content>
        <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Jateng')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA TENGAH</Text>
          </CardItem>
        </TouchableOpacity>
@@ -65,8 +65,8 @@ export default class Province extends Component {
     return(
      <Content>
        <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Yogyakarta')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>YOGYAKARTA</Text>
          </CardItem>
        </TouchableOpacity>
@@ -79,8 +79,8 @@ export default class Province extends Component {
     return(
      <Content>
        <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Jatim')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA TIMUR</Text>
          </CardItem>
        </TouchableOpacity>
@@ -94,8 +94,8 @@ export default class Province extends Component {
     return(
      <Content>
        <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Bali')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>BALI</Text>
          </CardItem>
        </TouchableOpacity>
@@ -109,24 +109,9 @@ export default class Province extends Component {
     return(
      <Content>
        <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Ntb')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Quotes')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>NTB</Text>
-         </CardItem>
-       </TouchableOpacity>
-       </Card>
-     </Content>
-    )
-  }
-
-  if(item.id ===8){
-
-    return(
-     <Content>
-       <Card transparent>
-       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Jakarta')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#139d15',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
-             <Text style={styles.instructions}>Jakarta</Text>
          </CardItem>
        </TouchableOpacity>
        </Card>
