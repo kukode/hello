@@ -94,7 +94,7 @@ export default class Home extends Component {
 
       <Content>
         <Card transparent>
-        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Lts')}>
+        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('Voice')}>
           <CardItem cardBody style={{borderRadius:20, backgroundColor:'#cddc39',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}>
                 <Text style={styles.instructions}>LEGEND VOICE</Text>
           </CardItem> 

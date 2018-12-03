@@ -9,7 +9,8 @@ import FasilitatorsScreen from '../Screen/Fasilitator';
 import LtsScreen from '../Screen/Lts';
 import ContactsScreen from '../Screen/Contact';
 import TutorialScreen from '../Screen/TutorialScreen';
-import FasilScreen from '../Screen/person/Fasilitator'
+import FasilScreen from '../Screen/person/Fasilitator';
+import VoiceScreen from '../Screen/Voice';
 
 
 import ProvinceScreen from '../Screen/provinsi/Province';
@@ -22,8 +23,23 @@ import LampungScreen from '../Screen/provinsi/list/Lampung';
 import YogyakartaScreen from '../Screen/provinsi/list/Yogyakarta';
 import JatimScreen from '../Screen/provinsi/list/Jatim';
 
-export default logStack = createStackNavigator({
 
+import FasilLampungScreen from '../Screen/person/list/Lampung';
+import FasilJabarScreen from '../Screen/person/list/Jabar';
+import FasilJatengScreen from '../Screen/person/list/Jateng';
+import FasilYogyakartaScreen from '../Screen/person/list/Yogyakarta';
+import FasilJatimScreen from '../Screen/person/list/Jatim';
+import FasilBaliScreen from '../Screen/person/list/Bali';
+import FasilNtbScreen from '../Screen/person/list/Ntb';
+import FasilJakartaScreen from '../Screen/person/list/Jakarta';
+
+
+
+export default logStack = createStackNavigator({
+    Voice : {
+        
+        screen : VoiceScreen
+    },
     Intro : {
         
         screen : Intro
@@ -81,7 +97,33 @@ export default logStack = createStackNavigator({
     },
     Jatim : {
         screen : JatimScreen
+    },
+    FasilLampung : {
+        screen : FasilLampungScreen
+    },
+    FasilJabar : {
+        screen : FasilJabarScreen
+    },
+    FasilJateng : {
+        screen : FasilJatengScreen
+    },
+    FasilYogyakarta : {
+        screen : FasilYogyakartaScreen
+    },
+    FasilJatim : {
+        screen : FasilJatimScreen
+    },
+    FasilBali : {
+        screen : FasilBaliScreen
+    },
+    FasilNtb : {
+        screen : FasilNtbScreen
+    },
+    FasilJakarta : {
+        screen : FasilJakartaScreen
     }
+
+
 
 
 },{

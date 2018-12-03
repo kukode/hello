@@ -30,12 +30,12 @@ export default class Contact extends Component {
                     </CardItem>
                 </Card>
 
-                <Button block primary
+                {/* <Button block primary
                 onPress={()=>this.props.navigation.navigate('Tutorial')}
                 style={{marginBottom:10}}>
                 
                 <Text> Tutorial Aplikasi </Text>
-                </Button>
+                </Button> */}
                 <Button block danger
                 onPress={()=>Linking.openURL('https://play.google.com/store/apps/details?id=com.hello.dev.bogor')}
                 >
