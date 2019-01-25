@@ -17,8 +17,10 @@ const styles = StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'space-around',
-    }
-    
+    },
+    styleBtn : {
+      color:'#444'
+    } 
   
 })
 
@@ -26,8 +28,8 @@ const slides = [
   
   {
     key: 'somethun',
-    title: 'Agoes Susilo JP',
-    text: 'Jadilah orang yang pandai, sepandai  pandainya dan jadilah orang baik, sebaik baiknya',
+    title: 'Elenor Roosevelt',
+    text: 'Orang yang kehilangan uang, kehilangan banyak, Kehilangan teman, kehilangan lebih banyak, Kehilangan iman, kehilangan semua',
     titleStyle : styles.title,
     textStyle : styles.text,
     backgroundColor: '#00fdff',
@@ -35,9 +37,9 @@ const slides = [
   },
   {
     key: 'somethun1',
-    title: ' Fred Devito',
+    title: ' Imam Syafi I',
     image:require('../assets/img/slide.png'),
-    text: 'If it doesn’t challenge you, it doesn’t change you',
+    text: 'Jangan menyampaikan pendapat pada orang yang tidak menginginkannya. Pendapatmu tak akan berguna, dan kau pun tak akan mendapat manfaat',
     titleStyle : styles.title,
     textStyle : styles.text,
     backgroundColor: '#00fdff'
@@ -75,7 +77,7 @@ export default class Intro extends Component {
         onDone={this._navigateScreen}
         doneLabel="Finish"
         showPrevButton="true"
-        
+        buttonTextStyle={styles.styleBtn}
         />
       </View>
         

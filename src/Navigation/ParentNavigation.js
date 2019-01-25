@@ -22,6 +22,8 @@ import JakartaScreen from '../Screen/provinsi/list/Jakarta';
 import LampungScreen from '../Screen/provinsi/list/Lampung';
 import YogyakartaScreen from '../Screen/provinsi/list/Yogyakarta';
 import JatimScreen from '../Screen/provinsi/list/Jatim';
+import SumutScreen from '../Screen/provinsi/list/Sumut';
+import SumselScreen from '../Screen/provinsi/list/Sumsel';
 
 
 import FasilLampungScreen from '../Screen/person/list/Lampung';
@@ -32,6 +34,8 @@ import FasilJatimScreen from '../Screen/person/list/Jatim';
 import FasilBaliScreen from '../Screen/person/list/Bali';
 import FasilNtbScreen from '../Screen/person/list/Ntb';
 import FasilJakartaScreen from '../Screen/person/list/Jakarta';
+import FasilSumutScreen from '../Screen/person/list/Sumut';
+import FasilSumselScreen from '../Screen/person/list/Sumsel';
 
 
 
@@ -98,6 +102,15 @@ export default logStack = createStackNavigator({
     Jatim : {
         screen : JatimScreen
     },
+    Sumut : {
+        screen : SumutScreen
+    },
+    Sumsel : {
+        screen : SumselScreen
+    },
+
+
+
     FasilLampung : {
         screen : FasilLampungScreen
     },
@@ -121,6 +134,12 @@ export default logStack = createStackNavigator({
     },
     FasilJakarta : {
         screen : FasilJakartaScreen
+    },
+    FasilSumut : {
+        screen : FasilSumutScreen
+    },
+    FasilSumsel : {
+        screen : FasilSumselScreen
     }
 
 

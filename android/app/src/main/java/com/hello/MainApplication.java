@@ -13,6 +13,7 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import io.fabric.sdk.android.Fabric;
 import java.util.Arrays;
 import java.util.List;
+import com.zmxv.RNSound.RNSoundPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -27,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new RNGestureHandlerPackage(),
-            new VectorIconsPackage()
+            new VectorIconsPackage(),
+            new RNSoundPackage()
       );
     }
 

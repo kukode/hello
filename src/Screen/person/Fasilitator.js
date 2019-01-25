@@ -11,7 +11,7 @@ export default class Fasilitator extends Component {
     {id:1, name: 'Lampung' }, { id:2,name: 'Jawa Barat'},
     {id:3, name: 'Jawa Tengah' }, { id:4,name: 'Yogyakarta' },
     { id:5,name: 'Jawa Timur' },{ id:6,name: 'Bali' },{ id:7,name: 'Nusa Tenggara Barat' },
-    { id:8,name: 'Jakarta' },
+    { id:8,name: 'Jakarta' },{ id:9,name: 'Sumut' },{ id:10,name: 'Sumsel' }
     
   ];
  
@@ -22,7 +22,7 @@ export default class Fasilitator extends Component {
       <Content>
         <Card transparent>
         <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilLampung')}>
-          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+          <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
               <Text style={styles.instructions}>LAMPUNG</Text>
           </CardItem>
         </TouchableOpacity>
@@ -37,7 +37,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilJabar')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA BARAT</Text>
          </CardItem>
        </TouchableOpacity>
@@ -52,7 +52,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilJateng')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA TENGAH</Text>
          </CardItem>
        </TouchableOpacity>
@@ -67,7 +67,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilYogyakarta')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>YOGYAKARTA</Text>
          </CardItem>
        </TouchableOpacity>
@@ -81,7 +81,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilJatim')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>JAWA TIMUR</Text>
          </CardItem>
        </TouchableOpacity>
@@ -96,7 +96,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilBali')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>BALI</Text>
          </CardItem>
        </TouchableOpacity>
@@ -111,7 +111,7 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilNtb')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>NTB</Text>
          </CardItem>
        </TouchableOpacity>
@@ -126,8 +126,36 @@ export default class Fasilitator extends Component {
      <Content>
        <Card transparent>
        <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilJakarta')}>
-         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#0056ff',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
              <Text style={styles.instructions}>Jakarta</Text>
+         </CardItem>
+       </TouchableOpacity>
+       </Card>
+     </Content>
+    )
+  }
+  if(item.id === 9){
+
+    return(
+     <Content>
+       <Card transparent>
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilSumut')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+             <Text style={styles.instructions}>Sumatera Utara</Text>
+         </CardItem>
+       </TouchableOpacity>
+       </Card>
+     </Content>
+    )
+  }
+  if(item.id === 10){
+
+    return(
+     <Content>
+       <Card transparent>
+       <TouchableOpacity  onPress={()=>this.props.navigation.navigate('FasilSumsel')}>
+         <CardItem cardBody style={{borderRadius:20, backgroundColor:'#FF6C02',alignContent:'center',justifyContent:'center', height: 150, width: null, flex: 1}}> 
+             <Text style={styles.instructions}>Sumatera Selatan</Text>
          </CardItem>
        </TouchableOpacity>
        </Card>
@@ -163,10 +191,10 @@ export default class Fasilitator extends Component {
 
 const styles = StyleSheet.create({
   instructions: {
-    fontFamily: "Kraash Black",
-    fontSize: 24,
+    fontFamily: "CaviarDreams_Bold",
+    fontSize: 22,
     textAlign: "center",
-    color: "#444",
+    color: "#ffff",
     marginBottom: 5
   },
 
